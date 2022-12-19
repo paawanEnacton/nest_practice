@@ -8,5 +8,15 @@ export class CreateUserDto {
   @IsNotEmpty()
   email: string;
 
+  @IsNotEmpty()
+  password: string;
+}
+
+export class LoginUserDto {
+  @IsEmail()
+  @IsNotEmpty()
+  email: string;
+
+  @IsNotEmpty()
   password: string;
 }
